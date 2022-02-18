@@ -18,14 +18,14 @@ function moduleTristan(){
         
                 <div class="card-container" id="${card.service}_card">
                     <div class = card-header>
-                        <img class="icon" src="../src/images/icon-${card.service}.svg">
+                        <img class="icon" src="./src/images/icon-${card.service}.svg">
                         <h2 class="card-heading"> ${card.username}</h2> 
                     </div>
         
                     <h2 class="total-followers"> ${card.value}</h2>
                     <h2 class="follower-label">${card.label} </h2>
                     <h2 class="daily-total trend-${card.metric.trend}">
-                    <img src= " ../src/images/icon-${card.metric.trend}.svg"> ${card.metric.value} Today </h2>
+                    <img src= "./src/images/icon-${card.metric.trend}.svg"> ${card.metric.value} Today </h2>
                 </div>
         
             `;
@@ -37,12 +37,12 @@ function moduleTristan(){
             <div class="lower-card-container ">
                 <div class="card-upper">
                     <h2 class="upper-card-heading">Page Views</h2>
-                    <img class ="icon" src="../src/images/icon-${element.service}.svg" alt="${element.service} Icon" />
+                    <img class ="icon" src="./src/images/icon-${element.service}.svg" alt="${element.service} Icon" />
     
                 </div>
                 <div class="card-lower">
                 <h2 class="lower-card-heading number">${element.value}</h2>
-                <h2 class="lower-card-heading trend-${element.metric.trend}"><img src= " ../src/images/icon-${element.metric.trend}.svg">
+                <h2 class="lower-card-heading trend-${element.metric.trend}"><img src= "./src/images/icon-${element.metric.trend}.svg">
                 ${element.metric.percent}%</h2>
                 </div> 
             </div>
